@@ -54,8 +54,8 @@ const projects = [
     ],
     stack: {
       Frontend: ["React", "Tailwind CSS"],
-      Backend: ["Node.js", "Express"],
-      Database: ["PostgreSQL"],
+      Backend: ["Coming soon..."],
+      Database: ["Coming soon..."],
       Other: ["Vite"]
     },
     github: "https://github.com/bennah995/ecorank"
