@@ -58,7 +58,7 @@ const projects = [
       Database: ["Coming soon..."],
       Other: ["Vite"]
     },
-    github: "https://github.com/bennah995/ecorank"
+    github: "https://github.com/bennah995/Eco-Rank"
   }
 ]
 
