@@ -3,7 +3,7 @@ import projects from "../data/projects";
 
 function Projects() {
   return (
-    <section id="work" className="bg-bg-secondary py-24 px-8 h-screen">
+    <section id="work" className="bg-bg-secondary py-24 px-8">
       <div className="max-w-5xl mx-auto">
         
         <p className="text-text-muted font-mono text-sm tracking-widest uppercase mb-2">Portfolio</p>
@@ -11,13 +11,13 @@ function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-bg-secondary border border-border hover:border-accent transition-colors duration-300 rounded-xl p-6 flex flex-col gap-4">
+            <div key={index} className="bg-bg-primary border border-border hover:border-accent transition-colors duration-300 rounded-xl p-6 flex flex-col gap-4">
               
               <h3 className="font-display text-xl font-semibold text-text-primary">{project.title}</h3>
               <p className="text-text-secondary text-sm leading-relaxed flex-1">{project.description}</p>
               
               <div className="flex flex-wrap gap-2">
-                {project.stack.map((tech, i) => (
+                {Object.values(project.stack).flat().map((tech, i) => (
                   <span key={i} className="bg-accent-tint text-accent text-xs font-mono px-3 py-1 rounded-full">{tech}</span>
                 ))}
               </div>

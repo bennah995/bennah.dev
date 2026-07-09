@@ -29,18 +29,36 @@ function ProjectDetail() {
 
         <p className="text-accent font-mono text-sm tracking-widest uppercase mb-2">Project</p>
         <h1 className="font-display text-5xl font-bold text-text-primary mb-6">{project.title}</h1>
+        <p className="text-text-secondary text-lg leading-relaxed mb-12">{project.overview}</p>
 
-        <p className="text-text-secondary text-lg leading-relaxed mb-10">
-          {project.longDescription}
-        </p>
+        {/* Features */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-semibold text-text-primary mb-6">Features</h2>
+          <ul className="flex flex-col gap-3">
+            {project.features.map((feature, i) => (
+              <li key={i} className="flex items-start gap-3 text-text-secondary">
+                <span className="text-accent mt-1">→</span>
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        <div className="mb-10">
-          <p className="text-text-muted font-mono text-sm uppercase tracking-widest mb-4">Tech Stack</p>
-          <div className="flex flex-wrap gap-3">
-            {project.stack.map((tech, i) => (
-              <span key={i} className="bg-accent-tint text-accent font-mono text-sm px-4 py-2 rounded-full">
-                {tech}
-              </span>
+        {/* Tech Stack */}
+        <div className="mb-12">
+          <h2 className="font-display text-2xl font-semibold text-text-primary mb-6">Tech Stack</h2>
+          <div className="flex flex-col gap-6">
+            {Object.entries(project.stack).map(([category, items], i) => (
+              <div key={i}>
+                <p className="text-accent font-mono text-xs uppercase tracking-widest mb-3">{category}</p>
+                <div className="flex flex-wrap gap-2">
+                  {items.map((tech, j) => (
+                    <span key={j} className="bg-bg-secondary border border-border text-text-secondary font-mono text-xs px-3 py-2 rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

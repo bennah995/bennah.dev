@@ -13,7 +13,7 @@ const stack = [
   },
   {
     category: "Tools & Environments",
-    items: ["Git / GitHub", "Ubuntu", "Postman", "VS Code"]
+    items: ["Git / GitHub", "Ubuntu", "Postman", "VS Code", "NGROK"]
   }
 ]
 

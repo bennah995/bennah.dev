@@ -3,6 +3,7 @@ import HeroSection from '../components/Hero'
 import Projects from '../components/Projects'
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </>
   )
 }
