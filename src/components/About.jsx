@@ -25,7 +25,7 @@ function About() {
         <p className="text-text-muted font-mono text-sm tracking-widest uppercase mb-2">About</p>
         <h2 className="font-display text-4xl font-bold text-text-primary mb-12">Who I Am</h2>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 h-screen gap-16 items-start">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 
           <div>
             <p className="text-text-secondary leading-relaxed mb-4">
