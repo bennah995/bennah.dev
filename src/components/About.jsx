@@ -29,7 +29,7 @@ function About() {
 
           <div>
             <p className="text-text-secondary leading-relaxed mb-4">
-              I'm Bennah Mutuku, a 21-year-old full-stack software engineer and founder of Digistar Tech, based in Nairobi, Kenya. I build real systems that solve real problems — from M-Pesa payment integrations to multi-channel CRM platforms.
+              I'm Benard, full-stack software engineer based in Nairobi, Kenya. I build real systems that solve real problems — from M-Pesa payment integrations to multi-channel CRM platforms.
             </p>
 
             <p className="text-text-secondary leading-relaxed mb-4">
