@@ -3,7 +3,7 @@ import projects from "../data/projects";
 
 function Projects() {
   return (
-    <section id="work" className="bg-bg-primary py-24 px-8">
+    <section id="work" className="bg-bg-secondary py-24 px-8 h-screen">
       <div className="max-w-5xl mx-auto">
         
         <p className="text-text-muted font-mono text-sm tracking-widest uppercase mb-2">Portfolio</p>
