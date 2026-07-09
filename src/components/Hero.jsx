@@ -24,9 +24,9 @@ function HeroSection(){
         <a href="#work" className="bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200">
           View Work
         </a>
-        <button href="#" className="border border-accent text-accent hover:bg-accent-tint font-medium px-6 py-3 rounded-lg transition-colors duration-200">
+        <a href="#contact" className="border border-accent text-accent hover:bg-accent-tint font-medium px-6 py-3 rounded-lg transition-colors duration-200">
           Contact Me
-        </button>
+        </a>
       </div>
 
     </div>
