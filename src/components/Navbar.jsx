@@ -6,7 +6,11 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-bg-primary/80 backdrop-blur-md border-b border-border">
 
-      <span className="text-accent font-display font-bold text-xl">Bennah.dev</span>
+      <a href="/">
+        <span className="text-accent font-display font-bold text-xl">
+          Bennah.dev
+        </span>
+      </a>
 
       {/* Desktop links */}
       <ul className="hidden md:flex gap-8 list-none">
